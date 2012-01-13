@@ -1,0 +1,11 @@
+pman () {
+	man -t "${1}" | open -f -a /Applications/Preview.app
+}
+
+function fawk {
+	first="awk '{print "
+	last="}'"
+	cmd="${first}\$${1}${last}"
+	eval $cmd
+}
+
