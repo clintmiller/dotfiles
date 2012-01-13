@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/clintmiller/Development'
+let g:netrw_dirhist_2='/Users/clintmiller/Development/wcs'
+let g:netrw_dirhist_3='/Users/clintmiller/Development/wcs/whm-trunk'
+let g:netrw_dirhist_4='/Users/clintmiller/Development/wcs/whm-trunk/db'
+let g:netrw_dirhist_5='/Users/clintmiller/Development/wcs/whm-trunk/db/sql'
+let g:netrw_dirhist_6='/Users/clintmiller/Development/wcs/whm-trunk/db/sql/img'
+let g:netrw_dirhist_7='/Users/clintmiller/Development/wcs/whm-trunk/db/sql/img/scripts'
