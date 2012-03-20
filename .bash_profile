@@ -6,7 +6,7 @@ fi
 
 set -o ignoreeof
 
-PS1="\[\033[1;30m\][\[\033[1;34m\]\u\[\033[1;30m\]@\[\033[0;32m\]\h\[\033[1;30m\]] \[\033[1;33m\]\w \[\033[1;37m\]\$\[\033[0m\] "
+PS1="\[\e[0;37m\][\[\e[1;34m\]\u\[\e[0;37m\]@\[\e[1;32m\]\h\[\e[0;37m\]] \[\e[1;33m\]\w \[\e[1;37m\]\$\[\e[0m\] "
 
 # Load bash_completion from MacPorts if its installed
 [ -r /opt/local/etc/bash_completion ] && source /opt/local/etc/bash_completion
