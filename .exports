@@ -4,18 +4,26 @@ export HISTCONTROL=erasedups
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-export PATH=$PATH:~/bin:~/bin/mcollective
+# MacPorts
+if [ -d "/opt/local/bin" ] ; then
+  export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+fi
+
+export PATH=/usr/local/bin:$PATH
+
+# Rbenv
+if [ -d ~/.rbenv ]; then
+		export PATH="$HOME/.rbenv/bin:$PATH"
+		eval "$(rbenv init -)"
+fi
+
 export DISPLAY=:0.0
 
 export SVN_EDITOR='mate -w'
 export EDITOR='mate -w'
 export LESSEDIT='mate -l %lm %f'
 
-export GROOVY_HOME=/Users/clintmiller/Development/Java/groovy-1.7.0
-export PATH=$PATH:$GROOVY_HOME/bin
-
 export EC2_HOME=/usr/local/ec2
 export EC2_PRIVATE_KEY=~/.ec2/pk-PTE2NDJQ6UHQ55JWIR64TKYH47N26SJ4.pem
 export EC2_CERT=~/.ec2/cert-PTE2NDJQ6UHQ55JWIR64TKYH47N26SJ4.pem
-
 
