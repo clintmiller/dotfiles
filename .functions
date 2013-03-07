@@ -9,3 +9,7 @@ function fawk {
 	eval $cmd
 }
 
+function psgrep {
+	ps aux | grep -v grep | grep -i --color=auto "$@" -
+}
+
